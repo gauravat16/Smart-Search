@@ -40,10 +40,10 @@ a. <strong>String dbToBeSearched</strong>
        The name of the database that has the table you want to smart-search.
     
    b.<strong>String tableOfData</strong> 
-       The name of the table containg the data.
+       The name of the table containing the data.
     
    c. <strong>ArrayList<String> columnNames</strong>
-       The list of all the columms in above table.
+       The list of all the columns in above table.
        
 ####2. ftsRebuilder()
 
