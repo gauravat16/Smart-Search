@@ -26,9 +26,9 @@ Add the predictiveSearch.java file to your project.
 
 
 
-Important functions
+###Important functions
 
-1. createFTS4Table(String dbToBeSearched, String tableOfData, ArrayList<String> columnNames)
+####1. createFTS4Table(String dbToBeSearched, String tableOfData, ArrayList<String> columnNames)
 
    Creates/Builds the Full Text Search Virtual Table.
 
@@ -41,15 +41,15 @@ Important functions
    c. ArrayList<String> columnNames
        The list of all the columms in above table.
        
-2. ftsRebuilder()
+####2. ftsRebuilder()
 
    Rebulids the FTS Virtual Table. <strong>Run this each time you make changes to your main database</strong>
    
-3. getSearchList(String partWord)
+####3. getSearchList(String partWord)
 
    returns the list of the words that match with your query. <strong>This is without stemming search.</strong>
    
-4. String getGuessWord(String word)
+####4. String getGuessWord(String word)
    
    Performs everything that getSearchList() does but with stemming.<strong> Use it for prediction.<strong>
    
