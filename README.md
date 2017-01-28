@@ -7,7 +7,7 @@ A combination of Full Text Search, Ranking and Stemming to give you the best out
 
 Add the predictiveSearch.java file to your project.
 
-#Example
+##Example
 
           PredictiveSearch search = new PredictiveSearch(getApplicationContext());
           ArrayList<String> columns = new ArrayList<>();
@@ -32,13 +32,13 @@ Add the predictiveSearch.java file to your project.
 
    Creates/Builds the Full Text Search Virtual Table.
 
-   a. String dbToBeSearched
+   a. ####String dbToBeSearched
        The name of the database that has the table you want to smart-search.
     
-   b. String tableOfData
+   b. ####String tableOfData
        The name of the table containg the data.
     
-   c. ArrayList<String> columnNames
+   c. ####ArrayList<String> columnNames
        The list of all the columms in above table.
        
 ####2. ftsRebuilder()
