@@ -5,7 +5,7 @@ A combination of Full Text Search, Ranking and Stemming to give you the best out
 
  <b>How to use</b>
 
-Add the predictiveSearch.java file to your project.
+Add the predictiveSearch.java file to your project. [Download](https://github.com/gauravat16/Smart-Search/archive/v1.0.zip)
 
 ##Example
 
