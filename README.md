@@ -2,7 +2,10 @@
 
 A combination of Full Text Search, Ranking and Stemming to give you the best output for your android application/Application using SQLite3.
 
-![Example of search](https://cloud.githubusercontent.com/assets/12914180/22394905/b0904936-e553-11e6-9b0e-9ca50af258c4.png)
+<img src="https://cloud.githubusercontent.com/assets/12914180/22394905/b0904936-e553-11e6-9b0e-9ca50af258c4.png" width="300" height="500">
+
+[App Link](https://play.google.com/store/apps/details?id=gaurav.lookup)
+
 
  <b>How to use</b>
 
