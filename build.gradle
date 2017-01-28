@@ -1,0 +1,6 @@
+apply plugin: 'java'
+
+jar{
+	baseName='smart-search'
+	version = '1.0'
+}
