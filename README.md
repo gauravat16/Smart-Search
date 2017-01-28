@@ -32,13 +32,13 @@ Add the predictiveSearch.java file to your project.
 
    Creates/Builds the Full Text Search Virtual Table.
 
-   a. ####String dbToBeSearched
+a. <strong>String dbToBeSearched</strong>
        The name of the database that has the table you want to smart-search.
     
-   b. ####String tableOfData
+   b.<strong>String tableOfData</strong> 
        The name of the table containg the data.
     
-   c. ####ArrayList<String> columnNames
+   c. <strong>ArrayList<String> columnNames</strong>
        The list of all the columms in above table.
        
 ####2. ftsRebuilder()
