@@ -7,11 +7,11 @@ A combination of Full Text Search, Ranking and Stemming to give you the best out
 [App Link](https://play.google.com/store/apps/details?id=gaurav.lookup)
 
 
- <b>How to use</b>
+**How to use**
 
 Add the predictiveSearch.java file to your project. [Download](https://github.com/gauravat16/Smart-Search/archive/v1.0.zip)
 
-##Example
+**Example**
 
           PredictiveSearch search = new PredictiveSearch(getApplicationContext());
           ArrayList<String> columns = new ArrayList<>();
@@ -32,30 +32,30 @@ Add the predictiveSearch.java file to your project. [Download](https://github.co
 
 ###Important functions
 
-####1. createFTS4Table(String dbToBeSearched, String tableOfData, ArrayList<String> columnNames)
+**1. createFTS4Table(String dbToBeSearched, String tableOfData, ArrayList<String> columnNames)**
 
-   Creates/Builds the Full Text Search Virtual Table.
+    Creates/Builds the Full Text Search Virtual Table.
 
-a. <strong>String dbToBeSearched</strong>
-       The name of the database that has the table you want to smart-search.
-    
-   b.<strong>String tableOfData</strong> 
-       The name of the table containing the data.
-    
-   c. <strong>ArrayList<String> columnNames</strong>
-       The list of all the columns in above table.
+ * String dbToBeSearched
+         The name of the database that has the table you want to smart-search.
+
+ * String tableOfData
+         The name of the table containing the data.
+
+ * ArrayList<String> columnNames
+         The list of all the columns in above table.
        
-####2. ftsRebuilder()
+**2. ftsRebuilder()**
 
-   Rebulids the FTS Virtual Table. <strong>Run this each time you make changes to your main database</strong>
+    Rebulids the FTS Virtual Table. Run this each time you make changes to your main database.
    
-####3. getSearchList(String partWord)
+**3. getSearchList(String partWord)**
 
-   returns the list of the words that match with your query. <strong>This is without stemming search.</strong>
+    returns the list of the words that match with your query. This is without stemming search.
    
-####4. String getGuessWord(String word)
+**4. String getGuessWord(String word)**
    
-   Performs everything that getSearchList() does but with stemming.<strong> Use it for prediction.<strong>
+    Performs everything that getSearchList() does but with stemming. Use it for prediction.
    
 
    
