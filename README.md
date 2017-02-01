@@ -8,7 +8,7 @@ A combination of Full Text Search, Ranking and Stemming to give you the best out
 
 **What is predictive search?**
 
-                    Besides the fast search with matching substrings what predictive does is, its stemms your search word ie. gets the root and then searches on the FTS Tables to get a list of matches, then it sorts the list on the basis of the probability of matching and returns the sorted list.
+Besides the fast search with matching substrings what predictive does is, its stemms your search word ie. gets the root and then searches on the FTS Tables to get a list of matches, then it sorts the list on the basis of the probability of matching and returns the sorted list.
 
 
 **How to use**
