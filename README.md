@@ -14,6 +14,7 @@ Besides the fast search with matching substrings what predictive does is, its st
 
 
 **How to use**
+
 Add the following in your build files.
 
           allprojects {
@@ -32,12 +33,14 @@ Add the following in your build files.
 
           PredictiveSearch search = new PredictiveSearch(getApplicationContext());
           ArrayList<String> columns = new ArrayList<>();
-          columns.add("word");
+          columns.add("col1");
+	  columns.add("col2");
+
       try {
-              search.createFTS4Table("learn.db", "entries", columns);
+              search.createFTS4Table("learn.db", "entries", columns); //learn.db is the db you want to search on
               search.ftsRebuilder(); //Use it to rebulid after any change
-              ArrayList<String> resp1 = search.getSearchList("2"); //Get result w/o stemming
-              ArrayList<String> resp2 = search.getGuessWord("2"); //Get result with stemming - predictive
+              ArrayList<String> resp1 = search.getSearchList("potatoes"); //Get result w/o stemming
+              ArrayList<String> resp2 = search.getGuessWord("try"); //Get result with stemming - predictive
 
           } catch (Exception ex) {
               ex.printStackTrace();
