@@ -1,4 +1,6 @@
-# Smart-Search
+# Smart-Search 
+[![](https://jitpack.io/v/gauravat16/Smart-Search.svg)](https://jitpack.io/#gauravat16/Smart-Search)
+
 A predictive search API that gives you the freedom to search on millions of entries in a database with ease.
 A combination of Full Text Search, Ranking and Stemming to give you the best output for your android application/Application using SQLite3.
 
@@ -12,9 +14,20 @@ Besides the fast search with matching substrings what predictive does is, its st
 
 
 **How to use**
+Add the following in your build files.
 
-Add the predictiveSearch.java file to your project. [Download](https://github.com/gauravat16/Smart-Search/archive/v1.0.zip)
-
+          allprojects {
+	          repositories {
+			...
+			maven { url 'https://jitpack.io' }
+                                 }
+	           }
+          
+          dependencies {
+	        compile 'com.github.gauravat16:Smart-Search:1.2'
+	             }
+          
+          
 **Example**
 
           PredictiveSearch search = new PredictiveSearch(getApplicationContext());
@@ -34,7 +47,7 @@ Add the predictiveSearch.java file to your project. [Download](https://github.co
 
 
 
-###Important functions
+## Important functions
 
 **1. createFTS4Table(String dbToBeSearched, String tableOfData, ArrayList<String> columnNames)**
 
