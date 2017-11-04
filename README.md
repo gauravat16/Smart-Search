@@ -33,14 +33,14 @@ Add the following in your build files.
 
           PredictiveSearch search = new PredictiveSearch(getApplicationContext());
           ArrayList<String> columns = new ArrayList<>();
-          columns.add("col1");
-	  columns.add("col2");
+          columns.add("<column-name>");
+	  columns.add("<column-name>");
 
       try {
-              search.createFTS4Table("learn.db", "entries", columns); //learn.db is the db you want to search on
+              search.createFTS4Table("<db-name.db>", "<table-name>", columns);
               search.ftsRebuilder(); //Use it to rebulid after any change
               ArrayList<String> resp1 = search.getSearchList("potatoes"); //Get result w/o stemming
-              ArrayList<String> resp2 = search.getGuessWord("try"); //Get result with stemming - predictive
+              ArrayList<String> resp2 = search.getPredictedList("try"); //Get result with stemming - predictive
 
           } catch (Exception ex) {
               ex.printStackTrace();
