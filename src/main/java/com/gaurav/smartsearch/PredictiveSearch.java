@@ -124,7 +124,7 @@ public class PredictiveSearch extends SQLiteOpenHelper {
 
     //Main method for a prediction based search uses stemming and getPriorityList
 
-    public ArrayList<String> getGuessWord(String word) {
+    public ArrayList<String> getPredictedList(String word) {
 
         Stemmer stemmer = new Stemmer();
         stemmer.add(word.toCharArray(), word.length());
