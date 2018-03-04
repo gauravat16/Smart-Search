@@ -69,11 +69,11 @@ Add the following in your build files.
 
     Rebulids the FTS Virtual Table. Run this each time you make changes to your main database.
    
-**3. getSearchList(String partWord)**
+**3. getMatchesWOStemming(String partWord)**
 
     returns the list of the words that match with your query. This is without stemming search.
    
-**4. String getGuessWord(String word)**
+**4. String getMatchesWStemming(String word)**
    
     Performs everything that getSearchList() does but with stemming. Use it for prediction.
    
